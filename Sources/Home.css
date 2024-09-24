@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: rgba(245, 245, 245, 0.727);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* TUDO SOBRE O CABEÇALHO E A BARRA DE NAVEGAÇÃO */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+#logo {
+    height: 150px;
+    margin-left: 30px;
+}
+
+li {
+    display: inline-block;
+    margin: 15px;
+    color: aliceblue;
+    font-size: 25px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header ul a :hover{
+    color: rgba(222, 184, 135, 0.705);
+    transition: 0.3s all;
+}
+
+#botao {
+    border-color: aliceblue;
+    padding: 10px;
+    font-weight: bold;
+    background-color: rgba(222, 184, 135, 0.705);
+    border-radius: 20px;
+}
+
+/* TUDO SOBRE O CONTEÚDO MAIN (ARTICLE E ASIDE) */
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#imagem {
+    height: 600px;
+    position: relative;
+    margin-top: 10px;
+    max-width: 100%;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    padding: 40px;
+    font-size: x-large;
+    line-height: 10px;
+    margin-top: -180px;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+.t1 {
+    line-height: 35px;
+    color: white;
+}
+
+#botao2 {
+    padding: 20px;
+    width: 270px;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgba(222, 184, 135, 0.705);           
+    border-radius: 20px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -90px;
+}
+
+
+
+p {
+    font-size: x-large;
+    margin-top: -25px;
+    width: 800px;
+    text-align: justify;
+}
+
+span {
+    color: rgba(222, 184, 135, 0.738);
+    max-width: 100%;
+    font-size: 50px;
+}
+
+#botao2:hover {
+    color: rgba(222, 184, 135, 0.738);
+    transition: 0.3s;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(109, 103, 103, 0.058);
+    padding: 20px;
+}
+
+#horario {
+    max-width: 50%;
+    margin-left: 20px;
+}
+
+#localização {
+    max-width: 50%;
+    margin-right: 20px;
+}
+
+#cronograma {
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 30px;
+    color: rgba(222, 184, 135, 0.738);
+    margin-bottom: 5px;
+}
+
+#rua {
+    margin-bottom: 10px;
+}
+
+.palavras {
+    font-size: 20px;
+}
+
+.titulo {
+    font-size: 20px;
+}
+
+#redes {
+    display: flex;
+}
+
+#zap {
+    margin-top: -13px;
+    margin-left: -20px;
+}
+
+#insta {
+    margin-left: -60px;
+}
+
+#rua {
+    color: white;
+}
+
+#numero {
+    margin-top: 40px;
+    color: white;
+}
+
+#chiba {
+    margin-bottom: 20px;
+}
+
+#copy {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#textocopy {
+    font-size: 13px;
+    color: white;
+}
+
+#rua:hover, #numero:hover {
+    color: rgba(222, 184, 135, 0.738);
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 1024px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    aside {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    article {
+        margin-top: 0;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        font-size: 20px;
+        margin: 10px;
+    }
+
+    #logo {
+        height: 120px;
+        margin-left: 0;
+    }
+
+    #botao {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    aside {
+        font-size: large;
+        padding: 20px;
+    }
+
+    #imagem {
+        height: auto;
+        width: 100%;
+    }
+
+    footer {
+        text-align: center;
+        padding: 10px;
+    }
+
+    #horario, #localização {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    li {
+        font-size: 16px;
+        margin: 5px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    p {
+        font-size: medium;
+        width: 100%;
+    }
+
+    #botao2 {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    #botao {
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    #textocopy {
+        font-size: 12px;
+    }
+
+    footer {
+        padding: 5px;
+    }
+
+    #logo {
+        height: 100px;
+    }
+}
+
+

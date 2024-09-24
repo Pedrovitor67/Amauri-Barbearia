@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: rgba(245, 245, 245, 0.727);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* TUDO SOBRE O CABEÇALHO E A BARRA DE NAVEGAÇÃO */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+#logo {
+    height: 150px;
+    margin-left: 30px;
+}
+
+li {
+    display: inline-block;
+    margin: 15px;
+    color: aliceblue;
+    font-size: 25px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header ul a :hover{
+    color: rgba(222, 184, 135, 0.705);
+    transition: 0.3s all;
+}
+
+#botao {
+    border-color: aliceblue;
+    padding: 10px;
+    font-weight: bold;
+    background-color: rgba(222, 184, 135, 0.705);
+    border-radius: 20px;
+}
+
+footer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(109, 103, 103, 0.058);
+    padding: 20px;
+}
+
+#horario {
+    max-width: 50%;
+    margin-left: 20px;
+}
+
+#localização {
+    max-width: 50%;
+    margin-right: 20px;
+}
+
+#cronograma {
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 30px;
+    color: rgba(222, 184, 135, 0.738);
+    margin-bottom: 5px;
+}
+
+#rua {
+    margin-bottom: 10px;
+}
+
+.palavras {
+    font-size: 20px;
+}
+
+.titulo {
+    font-size: 20px;
+}
+
+#redes {
+    display: flex;
+}
+
+#zap {
+    margin-top: -13px;
+    margin-left: -20px;
+}
+
+#insta {
+    margin-left: -60px;
+}
+
+#rua {
+    color: white;
+}
+
+#numero {
+    margin-top: 40px;
+    color: white;
+}
+
+#chiba {
+    margin-bottom: 20px;
+}
+
+#copy {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#textocopy {
+    font-size: 13px;
+    color: white;
+}
+
+#rua:hover, #numero:hover {
+    color: rgba(222, 184, 135, 0.738);
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 1024px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    aside {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    article {
+        margin-top: 0;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        font-size: 20px;
+        margin: 10px;
+    }
+
+    #logo {
+        height: 120px;
+        margin-left: 0;
+    }
+
+    #botao {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    aside {
+        font-size: large;
+        padding: 20px;
+    }
+
+    #imagem {
+        height: auto;
+        width: 100%;
+    }
+
+    footer {
+        text-align: center;
+        padding: 10px;
+    }
+
+    #horario, #localização {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    li {
+        font-size: 16px;
+        margin: 5px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    p {
+        font-size: medium;
+        width: 100%;
+    }
+
+    #botao2 {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    #botao {
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    #textocopy {
+        font-size: 12px;
+    }
+
+    footer {
+        padding: 5px;
+    }
+
+    #logo {
+        height: 100px;
+    }
+}
+
+
+main {
+    max-width: 50%;
+    margin: 0 auto;
+    margin-top: -70px;
+}
+
+h1 {
+    text-align: center;
+    color: rgba(222, 184, 135, 0.738);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#historia {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+#imagem {
+    align-self: center;
+    max-width: max-content;
+}
+
+.time-barbeiros {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Adicionado para permitir que os itens sejam quebrados em linhas para telas menores */
+}
+
+#img1, #img2, #img3 {
+    max-width: 200px;
+}
+
+#img1 {
+    margin-right: 20px;
+}
+
+#img2 {
+    margin-right: 20px;
+}
+
+#img3 {
+    margin-left: 20px;
+    margin: 0 auto;
+}
+
+#barbeiro1 {
+    max-width: 100%;
+}
+
+.nome {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+#historia-texto {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+/* Responsividade para tablets */
+@media (max-width: 1024px) {
+    main {
+        max-width: 80%; /* Aumenta a largura do conteúdo em tablets */
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Reduz o tamanho da fonte do título */
+        
+    }
+
+    .time-barbeiros {
+        flex-direction: column; /* Coloca as imagens e textos em uma coluna */
+        align-items: center; /* Centraliza o conteúdo */
+    }
+
+    #img1, #img2, #img3 {
+        max-width: 150px; /* Reduz o tamanho das imagens */
+        margin-bottom: 20px; /* Adiciona um espaçamento entre as imagens */
+    }
+
+    .nome {
+        font-size: 1.2rem; /* Reduz o tamanho da fonte dos nomes */
+    }
+
+    #historia-texto {
+        font-size: 1.2rem; /* Ajusta o tamanho do texto para tablets */
+    }
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    main {
+        max-width: 90%; /* Aumenta a largura do conteúdo em dispositivos móveis */
+    }
+
+    h1 {
+        font-size: 2rem; /* Reduz ainda mais o tamanho da fonte do título */
+    }
+
+    #img1, #img2, #img3 {
+        max-width: 120px; /* Reduz o tamanho das imagens para caber melhor em telas pequenas */
+        margin-bottom: 15px; /* Espaçamento entre as imagens */
+    }
+
+    #img3{
+       margin-left: -18px; 
+    }
+
+    .nome {
+        font-size: 1rem; /* Reduz o tamanho da fonte dos nomes */
+        
+    }
+
+    #historia-texto {
+        font-size: 1rem; /* Ajusta o tamanho do texto para dispositivos móveis */
+    }
+
+    .time-barbeiros {
+        flex-direction: column; /* Mantém as imagens e textos em uma coluna */
+        align-items: center;
+    }
+}
+
+
+#nossahistoria{
+    margin-top: 60px;
+}
+
+#amauri{
+    margin-top: 10px;
+}
+
+#carlinhos{
+    margin-top: 10px;
+}
+
+#ronaldo{
+    margin-top: 10px;
+}

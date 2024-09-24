@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: rgba(245, 245, 245, 0.727);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* TUDO SOBRE O CABEÇALHO E A BARRA DE NAVEGAÇÃO */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+#logo {
+    height: 150px;
+    margin-left: 30px;
+}
+
+li {
+    display: inline-block;
+    margin: 15px;
+    color: aliceblue;
+    font-size: 25px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header ul a :hover{
+    color: rgba(222, 184, 135, 0.705);
+    transition: 0.3s all;
+}
+
+#botao {
+    border-color: aliceblue;
+    padding: 10px;
+    font-weight: bold;
+    background-color: rgba(222, 184, 135, 0.705);
+    border-radius: 20px;
+}
+.serviços {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+}
+
+#cortes {
+    text-align: justify;
+    width: 30%;
+    margin: auto;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: dashed 3px;
+    list-style: none;
+}
+
+table {
+    size: 40px;
+    padding: 30px;
+    height: 71px;
+    width: 100%;
+    border-collapse: collapse;
+    padding-left: 30px;
+    margin: 0 auto;
+}
+
+td {
+    font-size: 40px;
+    padding-left: 180px;
+}
+
+.price {
+    color: rgba(222, 184, 135, 0.738);
+    align-items: center;
+}
+
+#titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    color: white;
+    margin-top: -60px;
+}
+
+footer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(109, 103, 103, 0.058);
+}
+
+#horario {
+    max-width: 50%;
+    margin-left: 20px;
+}
+
+#localização {
+    max-width: 50%;
+    margin-right: 20px;
+}
+
+#cronograma {
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 30px;
+    color: rgba(222, 184, 135, 0.738);
+    margin-bottom: 5px;
+}
+
+#rua {
+    margin-bottom: 10px;
+}
+
+.palavras {
+    font-size: 20px;
+}
+
+.titulo {
+    font-size: 20px;
+}
+
+#redes {
+    display: flex;
+}
+
+#zap {
+    margin-top: -13px;
+    margin-left: -20px;
+}
+
+#insta {
+    margin-left: -60px;
+}
+
+#rua {
+    color: white;
+    text-decoration: none;
+}
+
+#numero {
+    margin-top: 40px;
+    color: white;
+    text-decoration: none;
+}
+
+#chiba {
+    margin-bottom: 20px;
+}
+
+a:hover {
+    transition: 0.3s all;
+    color: rgba(222, 184, 135, 0.738);
+}
+
+#copy {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#textocopy {
+    font-size: 13px;
+    color: white;
+}
+
+#rua:hover, #numero:hover {
+    color: rgba(222, 184, 135, 0.738);
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+/* ESTILOS PARA TORNAR A PÁGINA RESPONSIVA */
+
+/* Tablets (largura máxima de 768px) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logo {
+        height: 120px;
+        margin-left: 0;
+    }
+
+    li {
+        font-size: 22px;
+    }
+
+    td {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    #cortes {
+        width: 80%;
+    }
+}
+
+/* Smartphones (largura máxima de 480px) */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logo {
+        height: 100px;
+    }
+
+    li {
+        font-size: 18px;
+    }
+
+    td {
+        font-size: 20px;
+        padding-left: 20px;
+    }
+
+    table {
+        padding-left: 0;
+    }
+
+    #cortes {
+        width: 90%;
+    }
+
+    #titulo {
+        font-size: large;
+        margin-top: 0;
+    }
+
+    #redes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #horario, #localização {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
